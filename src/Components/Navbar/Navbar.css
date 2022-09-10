@@ -1,0 +1,157 @@
+.Navbar {
+    height: 60px;
+    width: 70%;
+    background-color: #1d1e25;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    margin-top: 6px;
+    border-radius: 20px;
+}
+
+.ProfileName {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4%;
+}
+
+.MenuItems {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.MenuBars {
+    display: none;
+}
+
+.Menu {
+    height: 87%;
+    width: 90%;
+    background-color: #1d1e25;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+.Child_home::before {
+    content: attr(data-text);
+    color: #00ade1;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px #00ade1;
+}
+
+.Child_home:hover::before {
+    width: fit-content;
+    filter: drop-shadow(0 0 25px #00ade1);
+}
+
+.Child_about::before {
+    content: attr(data-text);
+    color: #ff6493;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px #ff6493;
+}
+
+.Child_about:hover::before {
+    width: fit-content;
+    filter: drop-shadow(0 0 25px #ff6493);
+}
+
+.Child_experience::before {
+    content: attr(data-text);
+    color: #ffdd1c;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px #ffdd1c;
+}
+
+.Child_experience:hover::before {
+    width: fit-content;
+    filter: drop-shadow(0 0 25px #ffdd1c);
+}
+
+.Child_skills::before {
+    content: attr(data-text);
+    color: #00dc82;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px #00dc82;
+}
+
+.Child_skills:hover::before {
+    width: fit-content;
+    filter: drop-shadow(0 0 25px #00dc82);
+}
+
+.Child_projects::before {
+    content: attr(data-text);
+    color: #dc00d4;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px #dc00d4;
+}
+
+.Child_projects:hover::before {
+    width: fit-content;
+    filter: drop-shadow(0 0 25px #dc00d4);
+}
+
+.Child_achievements::before {
+    content: attr(data-text);
+    color: #7FB3D5;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px #7FB3D5;
+}
+
+.Child_achievements:hover::before {
+    width: fit-content;
+    filter: drop-shadow(0 0 25px #7FB3D5);
+}
+
+
+@media screen and (max-width: 992px) {
+    .Navbar {
+        width: 90%;
+    }
+
+    .MenuItems {
+        display: none;
+    }
+
+    .MenuBars {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 4%;
+    }
+}

@@ -1,0 +1,20 @@
+.Experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .Title {
+        font-size: 2rem;
+    }
+}

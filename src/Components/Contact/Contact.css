@@ -1,0 +1,54 @@
+.Contact {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.ContactTitle {
+    width: 100%;
+    height: 100px;
+    color: whitesmoke;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LinkTray {
+    width: 60%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Link {
+    width: 20%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.Link:hover {
+    border: 2px solid whitesmoke;
+}
+
+.Link p{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .LinkTray {
+        flex-direction: column;
+    }
+
+    .Link {
+        width: 80%;
+    }
+}

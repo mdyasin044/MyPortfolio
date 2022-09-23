@@ -56,7 +56,7 @@ const Experience = () => {
         </motion.div>
         <VerticalTimeline>
             {Data.map((val, index) => {
-              return <ExperienceElement data={val} />
+              return <ExperienceElement key={index} data={val} />
             })}
         </VerticalTimeline>
     </section>

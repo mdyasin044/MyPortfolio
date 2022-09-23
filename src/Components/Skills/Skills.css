@@ -1,0 +1,8 @@
+.Skills {
+    height: 600px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1e25;
+}

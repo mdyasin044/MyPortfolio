@@ -1,0 +1,22 @@
+.Achievements {
+    margin-top: 100px;
+    height: 500px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1d1e25;
+}
+
+.AchievementItem {
+    height: 300px;
+    width: 300px;
+    background-color:bisque;
+}
+
+@media screen and (max-width: 992px) {
+    .Achievements {
+        flex-direction: column;
+        height: 1000px;
+    }
+}

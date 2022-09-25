@@ -31,7 +31,7 @@ const About = () => {
         </div>
         <div className='ImageContainer' onPointerOver={() => {setHovered(true)}} onPointerOut={() => {setHovered(false)}} >
           {!hovered ? <div className='DpShadow1' /> : <div className='DpShadow2' />}
-          <img className='Dp' src={dp} alt='dp'/>
+          <img className='Dp' src={dp} alt='dp' onContextMenu={() => {return false}}/>
           {!hovered ? <div className='DpCover' /> : null}
         </div>
       </div>

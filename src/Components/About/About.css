@@ -94,6 +94,10 @@
         height: 10%;
     }
 
+    .HorizontalLine {
+        width: 70px;
+    }
+
     .Intro {
         width: 100%;
     }

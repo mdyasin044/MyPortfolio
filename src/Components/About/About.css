@@ -1,64 +1,105 @@
 .About {
-    height: 500px;
+    height: 750px;
     width: 60%;
+    padding-top: 80px;
+}
+
+.AboutTitle {
+    height: 20%;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.AboutContents {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
+}
+
+.ImageContainer {
+    height: 300px;
+    width: 300px;
 }
 
 .Dp {
     height: 300px;
     width: 300px;
-    box-shadow: 8px 8px lightblue;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.DpShadow1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid aqua;
+}
+
+.DpShadow2 {
+    margin-left: 12px;
+    margin-top: 12px;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid aqua;
+}
+
+.DpCover {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    background: aqua;
+    opacity: 0.1;
+    position: absolute;
 }
 
 .Intro {
-    margin-top: 50px;
+    width: 50%;
+    font-size: 1rem;
+    font-family: 'papyrus';
+}
+
+.Highlight {
+    display: inline-block; 
+    color: aqua; 
+}
+
+.HorizontalLine {
+    height: 1px;
+    width: 100px;
+    background: aqua;
+}
+
+.AboutTitleText {
+    padding: 15px;
     font-size: 2rem;
-    font-family: 'Ink Free';
-    line-height: 60px;
-    display: flex;
+    color: aqua;
 }
-
-/* .Container {
-    font-size: 5rem;
-}
-
-.Container > span {
-    animation: glow 2s ease-in-out infinite;
-}
-
-@keyframes glow {
-    0%, 100% {
-        color: #fff;
-        text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
-    }
-
-    90% {
-        color: #111;
-        text-shadow: none;
-    }
-}
-
-.Container > span:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.Container > span:nth-child(3) {
-    animation-delay: 0.8s;
-}
-
-.Container > span:nth-child(4) {
-    animation-delay: 1.2s;
-}
-
-.Container > span:nth-child(5) {
-    animation-delay: 1.6s;
-} */
 
 @media screen and (max-width: 992px) {
     .About {
-        flex-direction: column;
+        width: 90%;
+        height: 850px;
+    }
+
+    .AboutTitle {
+        height: 10%;
+    }
+
+    .Intro {
         width: 100%;
+    }
+
+    .AboutContents {
+        flex-direction: column;
+        align-items: center;
     }
 }

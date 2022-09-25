@@ -5,7 +5,8 @@ const Data = [
         institution: 'Samsung R&D Institute Bangladesh',
         location: 'Dhaka, Bangladesh',
         time: '07/2021 - Present',
-        description: 'Working as a member of Wearable Experience Group'
+        description: 'Working as a member of Wearable Experience Group',
+        skills: ['React', 'Redux', 'Electron', 'NodeJS', 'Typescript'],
     },
     {
         icon: 'Briefcase',
@@ -13,7 +14,8 @@ const Data = [
         institution: 'Samsung R&D Institute Bangladesh',
         location: 'Dhaka, Bangladesh',
         time: '07/2019 - 07/2021',
-        description: 'Worked as a member of Samsung Health Application Group'
+        description: 'Worked as a member of Samsung Health Application Group',
+        skills: ['Swift', 'Objective-C', 'Rest APIs '],
     },
     {
         icon: 'GraduationCap',
@@ -21,24 +23,9 @@ const Data = [
         institution: 'Bangladesh University of Engineering and Technology',
         location: 'Dhaka, Bangladesh',
         time: '02/2015 - 04/2019',
-        description: 'Completed B.Sc in Computer Science and Engineering'
+        description: 'Completed B.Sc in Computer Science and Engineering',
+        skills: [],
     },
-    {
-        icon: 'GraduationCap',
-        title: 'College Student',
-        institution: 'Notre Dame College',
-        location: 'Dhaka, Bangladesh',
-        time: '2012 - 2014',
-        description: 'Graduated from Science Division'
-    },
-    {
-        icon: 'GraduationCap',
-        title: 'School Student',
-        institution: 'Bangladesh Bank Adarsha High School',
-        location: 'Dhaka, Bangladesh',
-        time: '2002 - 2012',
-        description: 'Graduated from Science Division'
-    }
 ]
 
 export default Data

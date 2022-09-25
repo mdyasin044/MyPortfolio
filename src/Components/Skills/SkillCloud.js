@@ -5,7 +5,7 @@ import { Text } from '@react-three/drei'
 
 function Word({ children, ...props }) {
   const color = new THREE.Color()
-  const fontProps = { font:"Philosopher", fontSize: 2.5, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
+  const fontProps = { fontSize: 2.5, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
   const ref = useRef()
   const [hovered, setHovered] = useState(false)
   const over = (e) => {e.stopPropagation(); setHovered(true)}
@@ -18,7 +18,7 @@ function Word({ children, ...props }) {
 
   useFrame(({ camera }) => {
     ref.current.quaternion.copy(camera.quaternion)
-    ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
+    ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'aqua'), 0.1)
   })
 
   useFrame(({ clock }) => {
@@ -26,7 +26,7 @@ function Word({ children, ...props }) {
     ref.current.rotation.y = -a/2;
   });
 
-  return <Text ref={ref} onPointerOver={over} onPointerOut={out} {...props} font={'Roboto Slab'} {...fontProps} children={children} />
+  return <Text ref={ref} onPointerOver={over} onPointerOut={out} {...props} {...fontProps} children={children} />
 }
 
 function shuffleArray(array) {

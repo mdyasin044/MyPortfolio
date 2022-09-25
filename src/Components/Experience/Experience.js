@@ -1,59 +1,42 @@
-import React, { useEffect } from 'react'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import React from 'react'
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
 import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import 'react-vertical-timeline-component/style.min.css'
 import Data from './Data';
 import './Experience.css'
 
 const Experience = () => {
-  const { ref, inView } = useInView({ threshold: 0.2 });
-  const animationOfTitle = useAnimation();
-
-  useEffect(() => {
-    if(inView) {
-      animationOfTitle.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring', duration: 5, bounce: 0.4
-        }
-      })
-    }
-    else {
-      animationOfTitle.start({
-        opacity: 0, x: '-5vw'
-      })
-    }
-  }, [inView, animationOfTitle]);
-
   const ExperienceElement = ({ data }) => {
       return (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(21, 24, 31)', color: 'whitesmoke' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(21, 24, 31)' }}
+            contentStyle={{ background: '#0A131E', color: '#bcd4e1' }}
+            contentArrowStyle={{ borderRight: '7px solid #0A131E' }}
             date={data.time}
-            iconStyle={{ background: 'rgb(21, 24, 31)', color: 'whitesmoke' }}
+            iconStyle={{ background: '#0A131E', color: '#bcd4e1' }}
             icon={<FontAwesomeIcon icon={data.icon === 'GraduationCap' ? faGraduationCap : faBriefcase}/>}
         >
-            <h3 className="vertical-timeline-element-title">{data.title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{data.institution}</h4>
-            <h4 className="vertical-timeline-element-subtitle">{data.location}</h4>
-            <p>
+            <h3 className="vertical-timeline-element-title" style={{color: '#bcd4e1'}}>{data.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle" style={{color: 'aqua'}}>{data.institution}</h4>
+            <h4 className="vertical-timeline-element-subtitle" style={{color: '#8bd0dd'}}>{data.location}</h4>
+            <p style={{color: '#66ddaa'}}>
                 {data.description}
             </p>
+            <div className='Stacks'>
+              {data.skills.map((val, index) => {
+                return <div key={index}>{val}</div>
+              })}
+            </div>
         </VerticalTimelineElement>
       );
   };
   
   return (
-    <section className='Experience' id='experience' ref={ref}>
-        <motion.div className='Title' animate={animationOfTitle}>
+    <section className='Experience' id='experience'>
+        <div className='Title'>
           Let me show you my journey!!!
-        </motion.div>
+        </div>
         <VerticalTimeline>
             {Data.map((val, index) => {
               return <ExperienceElement key={index} data={val} />

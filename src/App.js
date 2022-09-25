@@ -13,13 +13,16 @@ import Skills from './Components/Skills/Skills'
 const App = () => {
   return (
     <div className='App'>
-      <Navbar />
       <Home />
+      <Navbar />
       <About />
       <Experience />
       <Skills />
+      <div className='line1' />
       <Projects />
+      <div className='line1' />
       <Achievements />
+      <div className='line1' />
       <Contact />
     </div>
   )

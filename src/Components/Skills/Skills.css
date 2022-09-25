@@ -1,8 +1,40 @@
 .Skills {
-    height: 600px;
-    width: 70%;
+    height: 750px;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #1d1e25;
+}
+
+.SkillDetails {
+    width: 40%;
+}
+
+.CloudSkill {
+    height: 100%;
+    width: 40%;
+}
+
+.SkillTitle {
+    font-size: 3rem;
+    color: aqua;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .Skills {
+        padding-top: 80px;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .SkillDetails {
+        width: 100%;
+    }
+    
+    .CloudSkill {
+        height: 600px;
+        width: 100%;
+    }
 }

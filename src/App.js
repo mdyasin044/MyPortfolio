@@ -2,7 +2,7 @@ import React from 'react'
 // import WaterWave from 'react-water-wave';
 import './App.css'
 import About from './Components/About/About'
-import Achievements from './Components/Achievements/Achievements';
+import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact'
 import Experience from './Components/Experience/Experience'
 import Home from './Components/Home/Home'
@@ -18,11 +18,8 @@ const App = () => {
       <About />
       <Experience />
       <Skills />
-      <div className='line1' />
       <Projects />
-      <div className='line1' />
-      <Achievements />
-      <div className='line1' />
+      <Footer />
       <Contact />
     </div>
   )

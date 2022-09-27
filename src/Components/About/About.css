@@ -40,6 +40,7 @@
     border-radius: 5px;
     position: absolute;
     border: 1px solid aqua;
+    box-shadow: 2px 5px 8px aqua;
 }
 
 .DpShadow2 {
@@ -50,6 +51,7 @@
     border-radius: 5px;
     position: absolute;
     border: 1px solid aqua;
+    box-shadow: 2px 5px 8px aqua;
 }
 
 .DpCover {

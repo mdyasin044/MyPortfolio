@@ -37,11 +37,13 @@ const Experience = () => {
         <div className='Title'>
           Let me show you my journey!!!
         </div>
+        <div className='circle' />
         <VerticalTimeline>
             {Data.map((val, index) => {
               return <ExperienceElement key={index} data={val} />
             })}
         </VerticalTimeline>
+        <div className='circle' />
     </section>
   )
 }

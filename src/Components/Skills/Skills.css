@@ -1,6 +1,6 @@
 .Skills {
     height: 750px;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,6 +27,7 @@
         flex-direction: column;
         justify-content: center;
         height: auto;
+        width: 90%;
     }
 
     .SkillDetails {

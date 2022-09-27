@@ -18,7 +18,7 @@ function Word({ children, ...props }) {
 
   useFrame(({ camera }) => {
     ref.current.quaternion.copy(camera.quaternion)
-    ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'aqua'), 0.1)
+    ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'greenyellow'), 0.1)
   })
 
   useFrame(({ clock }) => {

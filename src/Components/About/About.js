@@ -1,9 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
 import dp from '../../Images/dp.jpg'
 import './About.css'
 
 const About = () => {
   const [hovered, setHovered] = useState(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+      if(hovered) {
+          animation.start({
+            width: 0,
+            transition: {
+              type: 'linear', duration: 0.6
+            }
+          })
+      }
+      else {
+          animation.start({
+            width: 300,
+            transition: {
+              type: 'linear', duration: 0.6
+            }
+          })
+      }
+  }, [hovered, animation]);
 
   const HighlightWord = ({text}) => {
     return <div className='Highlight'>{text}</div>
@@ -31,8 +52,8 @@ const About = () => {
         </div>
         <div className='ImageContainer' onPointerOver={() => {setHovered(true)}} onPointerOut={() => {setHovered(false)}} >
           {!hovered ? <div className='DpShadow1' /> : <div className='DpShadow2' />}
-          <img className='Dp' src={dp} alt='dp' onContextMenu={() => {return false}}/>
-          {!hovered ? <div className='DpCover' /> : null}
+          <img className='Dp' src={dp} alt='dp' />
+          <motion.div className='DpCover' animate={animation} />
         </div>
       </div>
     </section>

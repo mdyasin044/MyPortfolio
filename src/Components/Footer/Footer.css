@@ -1,0 +1,62 @@
+.Footer {
+    padding-top: 80px;
+    height: 700px;
+    width: 40%;
+}
+
+.ContactPart {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterPart {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SayHelloButton {
+    height: 60px;
+    width: 200px;
+    border: 1px solid greenyellow;
+    box-shadow: 2px 2px 8px aqua;
+    border-radius: 5px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: aqua;
+}
+
+.SayHelloButton:hover {
+    background-color: #014b43;
+}
+
+.Title1 {
+    color: aquamarine;
+    font-size: 1.5rem;
+}
+
+.Title2 {
+    color: aqua;
+    font-size: 3rem;
+}
+
+.ContactText {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .Footer {
+        width: 80%;
+    }
+}

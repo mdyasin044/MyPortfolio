@@ -4,53 +4,90 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
+}
+
+.ProjectTitleDiv {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ProjectTitleText {
+    padding: 15px;
+    font-size: 2rem;
+    color: aqua;
 }
 
 .ProjectTemplate {
-    height: 300px;
+    height: 350px;
     width: 60%;
-    background-color: #1d1e25;
     margin-top: 50px;
+    border-radius: 5px;
 }
 
 .ProjectTitle {
     position: absolute;
     top: 10px;
     right: 10px;
+    color: aqua;
+    font-size: 1rem;
 }
 
 .ProjectName {
     position: absolute;
     top: 40px;
     right: 10px;
+    color: whitesmoke;
+    font-size: 1.3rem;
 }
 
 .ProjectTools {
     position: absolute;
-    bottom: 40px;
+    width: 500px;
+    bottom: 70px;
     right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: greenyellow;
 }
 
 .ProjectImage {
     position: absolute;
     top: 10px;
     left: 10px;
-    height: 280px;
+    height: 330px;
     width: 500px;
     box-shadow: 5px 10px 18px black;
+    border-radius: 5px;
+}
+
+.ProjectImageCover {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 330px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: green;
+    opacity: 0.4;
 }
 
 .ProjectDetails {
     position: absolute;
     right: 10px;
     top: 100px;
-    height: 100px;
+    height: 80px;
     width: 500px;
-    background-color: #1d1e25;
+    background-color: #0A131E;
     font-size: 1rem;
-    font-family: 'Ink Free';
-    line-height: 60px;
+    text-align: right;
     box-shadow: 5px 10px 18px black;
+    border-radius: 5px;
+    padding: 30px;
+    color: aquamarine;
 }
 
 .ProjectInfo {
@@ -58,23 +95,35 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    height: 280px;
+    height: 330px;
     width: 500px;
     background-color: #1d1e25;
     opacity: 0.9;
     font-size: 1rem;
-    font-family: 'Ink Free';
-    line-height: 60px;
+    color: lightgoldenrodyellow;
+}
+
+.ProjectLink {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
 }
 
 @media screen and (max-width: 1100px) {
     .ProjectInfo {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         width: 96%;
     }
     
     .ProjectTitle {
         display: none;
+    }
+
+    .ProjectTitleDiv {
+        width: 90%;
     }
 
     .ProjectName {
@@ -89,8 +138,16 @@
         display: none;
     }
 
+    .ProjectLink {
+        display: none;
+    }
+
     .ProjectImage {
         width: 96%;
+    }
+
+    .ProjectImageCover {
+        display: none;
     }
 
     .ProjectTemplate {

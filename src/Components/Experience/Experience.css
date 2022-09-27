@@ -14,13 +14,20 @@
 }
 
 .Stacks {
-    width: 60%;
+    width: 100%;
     margin-top: 10px;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
+.circle {
+    width: 100px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+  }
 
 .Stacks div {
     margin-right: 10px;

@@ -21,7 +21,7 @@ const Navbar = () => {
           <a className='Child_experience' href='#experience' data-text='Experience'>Experience</a>
           <a className='Child_skills' href='#skills' data-text='Skills'>Skills</a>
           <a className='Child_projects' href='#projects' data-text='Projects'>Projects</a>
-          <a className='Child_achievements' href='#achievements' data-text='Achievements'>Achievements</a>
+          <a className='Child_contact' href='#contact' data-text='Contact'>Contact</a>
         </div>
         <div className='MenuBars'>
           <motion.div animate={{ rotate: isActive ? 90 : 0 }}>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <a className='Child_experience' href='#experience' data-text='Experience' onClick={toggleActivity}>Experience</a>
           <a className='Child_skills' href='#skills' data-text='Skills' onClick={toggleActivity}>Skills</a>
           <a className='Child_projects' href='#projects' data-text='Projects' onClick={toggleActivity}>Projects</a>
-          <a className='Child_achievements' href='#achievements' data-text='Achievements' onClick={toggleActivity}>Achievements</a>
+          <a className='Child_contact' href='#contact' data-text='Contact' onClick={toggleActivity}>Contact</a>
         </motion.div>
       ) : null}
     </>

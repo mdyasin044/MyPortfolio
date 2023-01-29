@@ -39,12 +39,12 @@ const ProjectTemplate = ({ data }) => {
                 transition: {
                     type: 'linear', duration: 1, bounce: 0
                 }
-        })
+            })
         }
         else {
             animationOfTemplate.start({
                 opacity: 0, y: '5vw'
-        })
+            })
         }
     }, [inView, animationOfTemplate]);
 
@@ -60,7 +60,7 @@ const ProjectTemplate = ({ data }) => {
                     })}
                 </div>
                 <div>
-                    <a href={data.link} onPointerOver={() => setLinkHover(true)} onPointerOut={() => setLinkHover(false)}>
+                    <a href={data.link} target="_blank" rel="noreferrer" onPointerOver={() => setLinkHover(true)} onPointerOut={() => setLinkHover(false)}>
                         <IoArrowForwardCircleOutline size={25} color={linkHover ? 'aqua' : 'aliceblue'}/>
                     </a>
                 </div>
@@ -85,7 +85,7 @@ const ProjectTemplate = ({ data }) => {
             </div>
             <div className='ProjectLink'>
                 <a href={data.link} onPointerOver={() => setLinkHover(true)} onPointerOut={() => setLinkHover(false)}>
-                    <IoArrowForwardCircleOutline size={25} color={linkHover ? 'aqua' : 'aliceblue'}/>
+                    <IoArrowForwardCircleOutline size={linkHover ? 27 : 25} color={linkHover ? 'aqua' : 'aliceblue'}/>
                 </a>
             </div>
         </motion.div>

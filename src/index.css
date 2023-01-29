@@ -7,8 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0F1D2D;
+  background-color: #0F1D2D;
+  background-color: #0a0b0a;
   color: #bcd4e1;
-  font-family: 'papyrus';
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   user-select: none;
 }
 

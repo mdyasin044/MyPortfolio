@@ -1,4 +1,92 @@
 .Home {
     height: 750px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeImage {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeText {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.LargeText {
+    padding-top: 20px;
+    font-size: 3rem;
+}
+
+.MediumText {
+    padding-top: 40px;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.ResumeBtn {
+    height: 60px;
+    width: 200px;
+    border: 1px solid greenyellow;
+    box-shadow: 2px 2px 8px aqua;
+    border-radius: 5px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: aqua;
+}
+
+.ResumeBtn:hover {
+    background-color: #014b43;
+}
+
+.TextCursor {
+    height: 55px;
+    width: 2px;
+    border: 1px solid greenyellow;
+    box-shadow: 2px 2px 8px aqua;
+    color: aqua;
+    background-color: #014b43;
+}
+
+@media screen and (max-width: 1100px) {
+    .Home {
+        height: 1050px;
+        flex-direction: column;
+    }
+
+    .HomeText {
+        height: 70%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .TextCursor {
+        height: 30px;
+    }
+
+    .HomeImage {
+        height: 30%;
+        width: 100%;
+    }
+
+    .LargeText {
+        font-size: 1.5rem;
+    }
+
+    .ResumeBtn {
+        font-size: 1rem;
+    }
 }

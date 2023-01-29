@@ -21,9 +21,9 @@ const SkillNames = [
     'NLP',
     'Typescript',
     'Android',
-    'REST APIs',
-    'OpenSSL',
-    'Git'
+    'Dot Net',
+    'C#',
+    'WinUI'
 ]
 
 export default SkillNames

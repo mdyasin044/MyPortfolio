@@ -21,17 +21,27 @@ const Contact = () => {
   }
   
   return (
-    <motion.section className='Contact' 
-      initial={{ y: '20vw' }}
-      animate={{ y: 0 }}
-      transition= {{ duration: 2, type: "linear" }}
-    >
-        <ContactElement name='Github' link='www.github.com'/>
-        <ContactElement name='Youtube' link='www.github.com'/>
-        <ContactElement name='Facebook' link='www.github.com'/>
-        <ContactElement name='Linkedin' link='www.github.com'/>
+    <section>
+      <motion.div className='Contact' 
+        initial={{ y: '20vw' }}
+        animate={{ y: 0 }}
+        transition= {{ duration: 2, type: "linear" }}
+      >
+          <ContactElement name='Github' link='https://github.com/mdyasin044'/>
+          <ContactElement name='Youtube' link='https://www.youtube.com/channel/UCfOw9TwswEpAZM-Nesv4BoQ'/>
+          <ContactElement name='Facebook' link='https://www.facebook.com/yasin.islam.18'/>
+          <ContactElement name='Linkedin' link='https://www.linkedin.com/in/mohammad-yasin'/>
+          <div className='line' />
+      </motion.div>
+      <motion.div className='Email'
+        initial={{ y: '-20vw', rotateZ: -180 }}
+        animate={{ y: 0, rotateZ: -180 }}
+        transition= {{ duration: 2, type: "linear" }}
+      >
+        <div className='EmailText'>yasinbuetcse14@gmail.com</div>
         <div className='line' />
-    </motion.section>
+      </motion.div>
+    </section>
   )
 }
 

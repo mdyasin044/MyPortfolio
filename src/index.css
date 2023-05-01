@@ -7,11 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0F1D2D;
-  background-color: #0F1D2D;
-  background-color: #0a0b0a;
+  background-color: #050c14fb;
   color: #bcd4e1;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   user-select: none;
+  font-family: 'Acme', sans-serif;
 }
 
 code {

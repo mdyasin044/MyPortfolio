@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import './Home.css'
-import logo from '../../Images/old.gif'
+import logo from '../../Images/build.gif'
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(120 - Math.random() * 100);
-  const toRotate = [ "A Creative Web Developer", "A Full Stack Software Engineer", "A Computer enthusiast"];
+  const toRotate = [ "Creative Web Developer", "Full Stack Software Engineer", "Computer enthusiast"];
   const period = 1000;
 
   useEffect(() => {
@@ -51,6 +51,7 @@ const Home = () => {
           <div className='LargeText' style={{display: 'flex'}}>
            {text}<div className='TextCursor'/>
           </div>
+          <br /><br /><br />
           <div className='MediumText'>
           I’m a full stack software engineer specializing in building and designing exceptional digital experiences. 
           I am continuously looking forward to acquiring new skills and exploring new technologies as well as meeting new people. 
@@ -59,9 +60,9 @@ const Home = () => {
             RESUME
           </div>
         </div>
-        <div className='HomeImage'>
+        {/* <div className='HomeImage'>
           <img src={logo} width='300px' alt='dp' />
-        </div>
+        </div> */}
     </section>
   )
 }

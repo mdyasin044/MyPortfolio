@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../../Images/box.gif");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .HomeImage {
@@ -20,12 +23,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .LargeText {
     padding-top: 20px;
     font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
 }
 
 .MediumText {

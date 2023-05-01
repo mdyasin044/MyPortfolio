@@ -1,6 +1,7 @@
 import project1 from '../../Images/project1.PNG'
 import project2 from '../../Images/project2.PNG'
 import project3 from '../../Images/project3.PNG'
+import project4 from '../../Images/project4.PNG'
 
 
 const Data = [
@@ -9,7 +10,14 @@ const Data = [
         imageUrl: project1,
         description: 'A trip and travel blog site developed using Django framework. Users can make an account here, create posts, upload images and see others posts.',
         tools: ['Django', 'Python', 'Postgresql', 'REST APIs', 'Heroku'],
-        link: 'https://travellica.herokuapp.com',
+        link: 'https://travellica.onrender.com/',
+    },
+    {
+        title: 'Kothahok',
+        imageUrl: project4,
+        description: 'Kothahok is a proprietary videotelephony software application. Users can create custom rooms for live video conferencing and text messaging.',
+        tools: ['React', 'NodeJS', 'WebRTC', 'Socket.io', 'Express'],
+        link: 'https://kothahok.netlify.app',
     },
     {
         title: 'Knox Mobile Enrollment',

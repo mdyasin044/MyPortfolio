@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../Images/box.gif");
-    /* background-attachment: fixed; */
-    background-size: cover;
+    background-image: url("../../Images/hill.jpg");
+    background-attachment: fixed;
+    background-size:cover;
 }
 
 .HomeImage {
@@ -28,9 +28,10 @@
 
 .LargeText {
     padding-top: 20px;
-    font-size: 3rem;
-    color: whitesmoke;
+    font-size: 2.9rem;
     text-shadow: 2px 2px 4px black;
+    font-family: 'Montserrat', sans-serif;
+    color: greenyellow;
 }
 
 .MediumText {
@@ -64,6 +65,10 @@
     box-shadow: 2px 2px 8px aqua;
     color: aqua;
     background-color: #014b43;
+}
+
+.HelloText {
+    
 }
 
 @media screen and (max-width: 1100px) {

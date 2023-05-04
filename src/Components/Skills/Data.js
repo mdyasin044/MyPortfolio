@@ -1,29 +1,29 @@
 const SkillNames = [
-    'C', 
+    'WebRTC', 
     'C++', 
     'Java', 
     'Python', 
     'Swift', 
     'Javascript', 
     'Django', 
-    'Laravel', 
+    'Redux', 
     'Bootstrap', 
     'React', 
     'Electron', 
     'Postgresql', 
     'Firebase', 
-    'Neo4j', 
+    'Express', 
     'MongoDB',
     'Three JS',
     'Node JS',
     'Algorithms',
     'DS',
-    'NLP',
+    'Redux',
     'Typescript',
     'Android',
     'Dot Net',
     'C#',
-    'WinUI'
+    'WPF'
 ]
 
 export default SkillNames

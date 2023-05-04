@@ -10,7 +10,7 @@ const Skills = () => {
           <div className='SkillTitle'>Skills & Expertise</div>
           <div>
             The main area of my expertise is web technologies such as HTML, CSS, Javascript, building small and medium web apps with 
-            React and NodeJS. <br /><br />
+            React, NodeJS and Express. <br /><br />
             I have also experience of mobile app development, worked with both Android and iOS platform. <br /><br />
             I have also expertise in Data structures and Algorithms. <br /><br />
             Visit my linkedin profile for more details.

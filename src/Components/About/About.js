@@ -40,8 +40,8 @@ const About = () => {
       <div className='AboutContents'>
         <div className='Intro'>
           Hello! My name is Md. Yasin and I enjoy creating things that live on the internet. 
-          My interest in web development started back in 2016 when I started to make projects for University Assignments. 
-          Those projects taught me a lot about <HighlightWord text='HTML'/> & <HighlightWord text='CSS'/>!
+          My interest in web development started back in 2016 when I started to make projects for University Assignments 
+          with <HighlightWord text='Laravel'/>. Later I learned about <HighlightWord text='DJango'/> and <HighlightWord text='NodeJS'/>.
           I have also built <HighlightWord text='Windows'/> & <HighlightWord text='Android'/> applications. 
           It feels great when people use my apps for their daily purposes. 
           <br /><br />

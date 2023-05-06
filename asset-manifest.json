@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.60b15f92.css",
-    "main.js": "/MyPortfolio/static/js/main.eb1df631.js",
+    "main.css": "/MyPortfolio/static/css/main.f465afe6.css",
+    "main.js": "/MyPortfolio/static/js/main.d99f5f66.js",
     "static/media/project1.PNG": "/MyPortfolio/static/media/project1.a6c34c5c8729ab821590.PNG",
     "static/media/box.gif": "/MyPortfolio/static/media/box.5d850951310c0548bfcf.gif",
     "static/media/dp.jpg": "/MyPortfolio/static/media/dp.37d173ae154faf287b60.jpg",
     "static/media/project3.PNG": "/MyPortfolio/static/media/project3.1c470e6c890c0bdf7763.PNG",
     "static/media/hacker.PNG": "/MyPortfolio/static/media/hacker.c723ae15a8fdaf912946.PNG",
     "static/media/project2.PNG": "/MyPortfolio/static/media/project2.1765a5fe79ae8d114736.PNG",
+    "static/media/BUET_LOGO.svg.png": "/MyPortfolio/static/media/BUET_LOGO.svg.1003aa5d677fbe355d6e.png",
     "static/media/project4.PNG": "/MyPortfolio/static/media/project4.b41e8a98a3a944ac10a5.PNG",
+    "static/media/samsung_health.png": "/MyPortfolio/static/media/samsung_health.5c5a6e982e146f235233.png",
+    "static/media/samsung_logo.png": "/MyPortfolio/static/media/samsung_logo.9e5be108296bb500b5e5.png",
+    "static/media/knox.jpg": "/MyPortfolio/static/media/knox.cbb01cdac1e1d443a453.jpg",
     "index.html": "/MyPortfolio/index.html",
-    "main.60b15f92.css.map": "/MyPortfolio/static/css/main.60b15f92.css.map",
-    "main.eb1df631.js.map": "/MyPortfolio/static/js/main.eb1df631.js.map"
+    "main.f465afe6.css.map": "/MyPortfolio/static/css/main.f465afe6.css.map",
+    "main.d99f5f66.js.map": "/MyPortfolio/static/js/main.d99f5f66.js.map"
   },
   "entrypoints": [
-    "static/css/main.60b15f92.css",
-    "static/js/main.eb1df631.js"
+    "static/css/main.f465afe6.css",
+    "static/js/main.d99f5f66.js"
   ]
 }

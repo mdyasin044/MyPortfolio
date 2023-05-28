@@ -3,15 +3,20 @@ import './Skills.css'
 import Cloud from './SkillCloud'
 import SkillNames from './Data'
 
+const HighlightWord = ({text}) => {
+  return <div className='Highlight'>{text}</div>
+}
+
 const Skills = () => {
   return (
     <section className='Skills' id='skills'>
         <div className='SkillDetails'>
           <div className='SkillTitle'>Skills & Expertise</div>
           <div>
-            The main area of my expertise is web technologies such as HTML, CSS, Javascript, building small and medium web apps with 
-            React, NodeJS and Express. <br /><br />
-            I have also experience of mobile app development, worked with both Android and iOS platform. <br /><br />
+            The main area of my expertise is web technologies such as HTML, CSS, Javascript, building small and medium web apps 
+            with <HighlightWord text='React'/>, <HighlightWord text='NodeJS'/> and <HighlightWord text='Express'/>. <br /><br />
+            I have also experience of mobile app development, worked with both <HighlightWord text='Android'/> 
+            and <HighlightWord text='iOS'/> platform. <br /><br />
             I have also expertise in Data structures and Algorithms. <br /><br />
             Visit my linkedin profile for more details.
           </div>

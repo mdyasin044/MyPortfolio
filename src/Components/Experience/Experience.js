@@ -51,7 +51,7 @@ const Experience = () => {
   return (
     <section className='Experience' id='experience'>
       <div className='Title'>
-        Let me show you my journey!!!
+        Let me show you my journey!
       </div>
       <div className='circle' />
       <VerticalTimeline>

@@ -55,11 +55,17 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  
     align-items: center;
 }
 
 .ExperienceIcon img {
     border-radius: 50%;
+}
+
+.ExperienceIcon img:hover {
+    height: 90%;
+    width: 90%;
 }
 
 @media screen and (max-width: 992px) {

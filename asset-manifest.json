@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.f465afe6.css",
-    "main.js": "/MyPortfolio/static/js/main.d99f5f66.js",
+    "main.css": "/MyPortfolio/static/css/main.0d29dc14.css",
+    "main.js": "/MyPortfolio/static/js/main.5e38bb0e.js",
     "static/media/project1.PNG": "/MyPortfolio/static/media/project1.a6c34c5c8729ab821590.PNG",
     "static/media/box.gif": "/MyPortfolio/static/media/box.5d850951310c0548bfcf.gif",
     "static/media/dp.jpg": "/MyPortfolio/static/media/dp.37d173ae154faf287b60.jpg",
@@ -14,11 +14,11 @@
     "static/media/samsung_logo.png": "/MyPortfolio/static/media/samsung_logo.9e5be108296bb500b5e5.png",
     "static/media/knox.jpg": "/MyPortfolio/static/media/knox.cbb01cdac1e1d443a453.jpg",
     "index.html": "/MyPortfolio/index.html",
-    "main.f465afe6.css.map": "/MyPortfolio/static/css/main.f465afe6.css.map",
-    "main.d99f5f66.js.map": "/MyPortfolio/static/js/main.d99f5f66.js.map"
+    "main.0d29dc14.css.map": "/MyPortfolio/static/css/main.0d29dc14.css.map",
+    "main.5e38bb0e.js.map": "/MyPortfolio/static/js/main.5e38bb0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f465afe6.css",
-    "static/js/main.d99f5f66.js"
+    "static/css/main.0d29dc14.css",
+    "static/js/main.5e38bb0e.js"
   ]
 }
